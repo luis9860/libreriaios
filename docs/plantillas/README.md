@@ -23,6 +23,13 @@ Los datos reales van en [`../trabajo/`](../trabajo/).
 | 15 | [15-INFORME-SPRINT.md](15-INFORME-SPRINT.md) | Durante sprints |
 | 16 | [16-MANUAL-USUARIO.md](16-MANUAL-USUARIO.md) | Cierre |
 | 17 | [17-MANUAL-INSTALACION.md](17-MANUAL-INSTALACION.md) | Cierre |
+| 18 | [18-REQUISITOS-FUNCIONALES.md](18-REQUISITOS-FUNCIONALES.md) | Análisis — RF |
+| 19 | [19-REQUISITOS-NO-FUNCIONALES.md](19-REQUISITOS-NO-FUNCIONALES.md) | Análisis — RNF |
+| 20 | [20-REQUISITOS-SISTEMA.md](20-REQUISITOS-SISTEMA.md) | Visión / sistema |
+| 21 | [21-CASOS-DE-USO.md](21-CASOS-DE-USO.md) | Análisis |
+| 22 | [22-ESPECIFICACION-API.md](22-ESPECIFICACION-API.md) | Contrato REST |
+| 23 | [23-GLOSARIO.md](23-GLOSARIO.md) | Definiciones |
+| 24 | [24-MATRIZ-TRAZABILIDAD.md](24-MATRIZ-TRAZABILIDAD.md) | RF ↔ US ↔ pruebas |
 
 **Uso:**  
 1. `plantillas/` = molde con **ejemplos completos** del negocio LibreriaRent.  
