@@ -1,0 +1,25 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.xcuserstate
+xcuserdata/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets / local
+.env
+*.pem
+
+# Word lock / temp
+~$*
+*.tmp
+
+DerivedData/
+*.apk
+*.ipa
