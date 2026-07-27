@@ -1,17 +1,8 @@
 # Documentación
 
-## Carpetas
+**Empieza aquí:** [INDICE-MAESTRO.md](INDICE-MAESTRO.md) — un solo estándar (video + Cibertec + corporativo), sin duplicar trabajo.
 
-| Carpeta | Para qué |
-|---------|----------|
-| [`plantillas/`](plantillas/) | Moldes corporativos — **no llenar con datos reales** |
-| [`trabajo/`](trabajo/) | Copias para **rellenar con datos reales** |
-| Raíz `docs/` | Kickoff inicial legacy (`.md` / `.docx`) — preferir `trabajo/00-KICKOFF.md` |
-
-## Flujo
-
-```text
-plantillas/  →  (copiar)  →  trabajo/  →  rellenar  →  entregar / exportar Word
-```
-
-Empieza en: [`trabajo/00-KICKOFF.md`](trabajo/00-KICKOFF.md)
+| Carpeta | Uso |
+|---------|-----|
+| [plantillas/](plantillas/) | Moldes con ejemplos |
+| [trabajo/](trabajo/) | Rellenar datos reales |

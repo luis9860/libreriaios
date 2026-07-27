@@ -30,6 +30,14 @@ Los datos reales van en [`../trabajo/`](../trabajo/).
 | 22 | [22-ESPECIFICACION-API.md](22-ESPECIFICACION-API.md) | Contrato REST |
 | 23 | [23-GLOSARIO.md](23-GLOSARIO.md) | Definiciones |
 | 24 | [24-MATRIZ-TRAZABILIDAD.md](24-MATRIZ-TRAZABILIDAD.md) | RF ↔ US ↔ pruebas |
+| 25 | [25-DISENO-UI.md](25-DISENO-UI.md) | Diseño UI (video) |
+| 26 | [26-MODELO-DATOS.md](26-MODELO-DATOS.md) | Datos y flujos (video) |
+| 27 | [27-DESARROLLO-IMPLEMENTACION.md](27-DESARROLLO-IMPLEMENTACION.md) | Metodología/tools (video) |
+| 28 | [28-DESPLIEGUE-MANTENIMIENTO.md](28-DESPLIEGUE-MANTENIMIENTO.md) | Deploy (video) |
+| 29 | [29-LEGAL-ETICO.md](29-LEGAL-ETICO.md) | Legal/ético (video) |
+| 30 | [30-CONCLUSION-FUTURO.md](30-CONCLUSION-FUTURO.md) | Cierre (video) |
+
+Ver también: [`../INDICE-MAESTRO.md`](../INDICE-MAESTRO.md)
 
 **Uso:**  
 1. `plantillas/` = molde con **ejemplos completos** del negocio LibreriaRent.  
