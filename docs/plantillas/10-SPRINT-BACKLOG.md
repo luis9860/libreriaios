@@ -1,36 +1,46 @@
-# 10 — Sprint Backlog (plantilla)
+# 10 — Sprint Backlog (plantilla completa con ejemplos)
 
-## Datos del sprint
+> Duplica este archivo por sprint: `10-SPRINT-BACKLOG-01.md`, `02`, etc.
+
+---
+
+## Datos del sprint — EJEMPLO (Sprint 1)
 
 | Campo | Valor |
 |-------|--------|
-| Sprint # | `[RELLENAR]` |
-| Fechas | `[RELLENAR]` → `[RELLENAR]` |
-| Sprint Goal | `[RELLENAR]` |
-| Capacidad (puntos/horas) | `[RELLENAR]` |
+| Sprint # | 1 |
+| Fechas | `[RELLENAR]` *ej. 04/08/2026 → 17/08/2026* |
+| Sprint Goal | Tener API Spring Boot con health, libros básicos y login email |
+| Capacidad | `[RELLENAR]` *ej. 20 puntos / 30 horas* |
 
-## Historias comprometidas
+## Historias comprometidas — EJEMPLO
 
 | ID | Historia | Est. | Responsable | Estado |
 |----|----------|------|-------------|--------|
-| US__ | `[RELLENAR]` | | `[RELLENAR]` | To Do / Doing / Done |
+| US01 | Login email | M | `[RELLENAR]` | To Do |
+| US09 | Alta título (API) | M | `[RELLENAR]` | To Do |
+| — | Setup repo API + BD | S | `[RELLENAR]` | To Do |
 
-## Tareas técnicas (desglose)
+## Tareas técnicas — EJEMPLO
 
-| Tarea | Historia | Responsable | Estado |
-|-------|----------|-------------|--------|
-| `[RELLENAR]` *Crear endpoint GET /books* | US__ | | |
-| `[RELLENAR]` *Pantalla CatalogList VC* | US__ | | |
-| `[RELLENAR]` | | | |
+| Tarea | Historia | Estado |
+|-------|----------|--------|
+| Crear proyecto Spring Boot + entity Book | US09 | To Do |
+| Endpoint POST/GET `/api/auth/login` | US01 | To Do |
+| Endpoint GET/POST `/api/books` | US09 | To Do |
+| Seed admin + 3 libros demo | — | To Do |
+| README API con cómo levantar | — | To Do |
+| Card Trello por cada tarea | — | To Do |
 
 ## Impedimentos
 
 | Fecha | Impedimento | Acción |
 |-------|-------------|--------|
-| `[RELLENAR]` | `[RELLENAR]` | `[RELLENAR]` |
+| `[RELLENAR]` | *Ej: JDK no instalado* | Instalar JDK 17 |
 
-## Resultado del sprint (al cierre)
+## Resultado (llenar al cierre)
 
-- Completado: `[RELLENAR]`
-- No completado / deuda: `[RELLENAR]`
-- Notas de demo/retro: `[RELLENAR]`
+- Completado: `[RELLENAR]`  
+- No completado: `[RELLENAR]`  
+- Demo: `[RELLENAR]` *Postman login + listar books*  
+- Retro Keep/Drop/Try: `[RELLENAR]`  

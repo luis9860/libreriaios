@@ -1,40 +1,48 @@
-# 08 — Product Backlog (plantilla)
+# 08 — Product Backlog (plantilla completa con ejemplos)
 
-> Historias INVEST. Prioridad: Must / Should / Could. Estimación: puntos o S/M/L.
+> Prioridad: Must / Should / Could. Est.: S=1, M=3, L=5 (o planning poker).
+
+---
 
 ## Épicas
 
-| ID | Épica |
-|----|--------|
-| E1 | Autenticación |
-| E2 | Catálogo / ejemplares |
-| E3 | Pagos Yape |
-| E4 | Alquileres (recojo / devolución) |
-| E5 | Administración |
-| E6 | Watson |
-| E7 | Pruebas / calidad |
+| ID | Épica | Descripción |
+|----|--------|-------------|
+| E1 | Autenticación | Email + Facebook + sesión |
+| E2 | Catálogo / ejemplares | Títulos, UID, disponibilidad |
+| E3 | Pagos Yape | UI + PaymentService |
+| E4 | Alquileres | Reserva, recojo, devolución, plazos |
+| E5 | Administración | CRUD libros/ejemplares |
+| E6 | Watson | FAQ asistente |
+| E7 | Calidad | Pruebas API / plan |
 
-## Historias de usuario
+---
 
-| ID | Como… | Quiero… | Para… | Prioridad | Est. | Épica | Criterios de aceptación (Given/When/Then resumido) |
-|----|-------|---------|-------|-----------|------|-------|-----------------------------------------------------|
-| US01 | Usuario | registrarme/iniciar sesión con email | acceder al sistema | Must | `[ ]` | E1 | `[RELLENAR]` |
-| US02 | Usuario | iniciar sesión con Facebook | entrar rápido | Must | `[ ]` | E1 | `[RELLENAR]` |
-| US03 | Usuario | ver catálogo de títulos | elegir un libro | Must | `[ ]` | E2 | `[RELLENAR]` |
-| US04 | Usuario | ver ejemplares disponibles (UID) | saber qué hay | Must | `[ ]` | E2 | `[RELLENAR]` |
-| US05 | Usuario | pagar con Yape (celular + código) | reservar el alquiler | Must | `[ ]` | E3 | `[RELLENAR]` |
-| US06 | Usuario | ver alquiler + garantía en el total | entender el cobro | Must | `[ ]` | E3 | `[RELLENAR]` |
-| US07 | Usuario | recoger el ejemplar en local | llevarme el libro | Must | `[ ]` | E4 | `[RELLENAR]` |
-| US08 | Usuario | devolver el ejemplar | liberar garantía | Must | `[ ]` | E4 | `[RELLENAR]` |
-| US09 | Admin | dar de alta títulos y ejemplares | tener inventario | Must | `[ ]` | E5 | `[RELLENAR]` |
-| US10 | Usuario | preguntar a Watson dudas frecuentes | resolver sin soporte | Should | `[ ]` | E6 | `[RELLENAR]` |
-| US11 | `[RELLENAR]` | `[RELLENAR]` | `[RELLENAR]` | | | | |
+## Historias — EJEMPLO COMPLETO
 
-## Definition of Ready (DoR)
+| ID | Historia (Como… quiero… para…) | Pri | Est | Épica | Criterios de aceptación (ejemplo) |
+|----|--------------------------------|-----|-----|-------|-----------------------------------|
+| US01 | Como usuario quiero registrarme e iniciar sesión con email/contraseña para acceder | Must | M | E1 | Given datos válidos When login Then sesión activa; Given contraseña mala Then error |
+| US02 | Como usuario quiero iniciar sesión con Facebook para entrar sin formulario largo | Must | M | E1 | Given Facebook OK When autorizo Then entro como member |
+| US03 | Como usuario quiero ver el catálogo en lista/colección para elegir un título | Must | M | E2 | Given API con libros When abro catálogo Then veo título, autor, disponibles |
+| US04 | Como usuario quiero ver detalle (precio alquiler, garantía, valor) y UIDs disponibles | Must | M | E2 | Given título con 2 available When abro detalle Then veo montos y cantidad disponible |
+| US05 | Como usuario quiero pagar con Yape (celular + código verificación) el total alquiler+garantía | Must | L | E3 | Given formulario completo When pago OK Then payment approved; si falla Then no hay rental |
+| US06 | Como usuario quiero que al pagar se reserve un ejemplar UID y empiece el plazo | Must | L | E4 | Given pago approved When confirma Then exemplar reserved y dueDate = now+N días |
+| US07 | Como admin/usuario quiero registrar recojo para pasar a onLoan | Must | S | E4 | Given reserved When confirmo recojo Then onLoan |
+| US08 | Como admin quiero registrar devolución en buen estado y marcar garantía reembolsable | Must | M | E4 | Given onLoan When devuelvo OK Then available + guarantee refundable |
+| US09 | Como admin quiero crear título con bookValue, rentalPrice, guaranteeAmount (≥ valor) | Must | M | E5 | Given garantía < valor When guardo Then error validación |
+| US10 | Como admin quiero crear ejemplares con UID para un título | Must | S | E5 | Given título When creo ejemplar Then uid único y available |
+| US11 | Como usuario quiero preguntar a Watson por garantía/recojo/Yape | Should | M | E6 | Given pregunta FAQ When envío Then respuesta configurada |
+| US12 | Como equipo quiero pruebas API de login y books | Should | M | E7 | Given API up When Rest Assured Then 200 y contrato OK |
+| US13 | Como usuario quiero ver mis alquileres y si estoy atrasado | Must | M | E4 | Given tengo rental When abro Mis alquileres Then veo estado y dueDate |
+| US14 | `[RELLENAR]` historia extra del equipo | Could | | | |
 
-Una historia entra a sprint si:  
-`[RELLENAR]` *clara, estimada, criterios de aceptación, sin bloqueos*
+---
 
-## Definition of Done (DoD)
+## Definition of Ready — EJEMPLO
 
-`[RELLENAR]`
+Clara, con criterios de aceptación, estimada, prioridad Must/Should, sin dependencia bloqueante sin plan.
+
+## Definition of Done — EJEMPLO
+
+Código en `main` o PR merge, build OK, criterios OK, probada, card en Hecho, demoable.

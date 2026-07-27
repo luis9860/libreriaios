@@ -1,79 +1,126 @@
-# 00 — Kickoff (plantilla)
+# 00 — Kickoff (plantilla completa con ejemplos)
 
-> Completa `[RELLENAR]`. *Cursiva = ejemplo.*
+> **Cómo usar:** deja los `[RELLENAR]` solo donde van TUS datos (nombre, fechas, equipo, link Trello).  
+> El resto ya trae **ejemplo completo** del proyecto librería — adáptalo o cópialo a `trabajo/`.
+
+---
 
 ## 1. Datos generales
 
 | Campo | Valor |
 |-------|--------|
-| Nombre del sistema | `[RELLENAR]` *Ej: LibreriaRent* |
-| Código | `[RELLENAR]` *Ej: LR-2026* |
-| Fecha kickoff | `[RELLENAR]` |
-| Ciclo / aula | `[RELLENAR]` |
+| Nombre del sistema | `[RELLENAR]` — *Ejemplo sugerido: **LibreriaRent*** |
+| Código | `[RELLENAR]` — *Ejemplo: **LR-2026*** |
+| Fecha kickoff | `[RELLENAR]` — *Ejemplo: 26/07/2026* |
+| Ciclo / aula | `[RELLENAR]` — *Ejemplo: Sexto ciclo — aula XXX — 2026-2* |
 | Coordinador | `[RELLENAR]` |
-| Integrantes | `[RELLENAR]` |
+| Integrantes | `[RELLENAR]` — *Ejemplo: Luis Pérez, Ana Ruiz* |
 
-### Cursos
+### Cursos que abarca
 
-- [ ] Móviles II (4696)
-- [ ] Proyecto Integrador (2423)
-- [ ] Pruebas de Software (2424)
+- [x] Desarrollo de Aplicaciones Móviles II (4696)
+- [x] Proyecto Integrador (2423)
+- [x] Pruebas de Software (2424)
 
-## 2. Problema (1 frase)
+---
 
-`[RELLENAR]`
+## 2. Problema (1 frase) — EJEMPLO COMPLETO
 
-*Ej: El alquiler de libros físicos se gestiona sin control de ejemplares, garantías ni plazos.*
+Los negocios de alquiler de libros físicos pierden control de **ejemplares**, **garantías** y **plazos** porque el proceso se lleva en papel, Excel o de forma informal, sin una app que una pago, inventario y recojo.
 
-## 3. Solución (1 frase)
+`[RELLENAR si quieres otra redacción]`
 
-`[RELLENAR]`
+---
 
-*Ej: App iOS + API Spring Boot para alquilar ejemplares con UID, pago Yape y recojo en local.*
+## 3. Solución (1 frase) — EJEMPLO COMPLETO
+
+**LibreriaRent**: app iOS + API Spring Boot para alquilar **ejemplares con UID**, pagar con **Yape** (alquiler + garantía), **recoger y devolver en local**, con login email/Facebook, Firebase, Core Data y asistente **Watson**.
+
+`[RELLENAR si quieres otra redacción]`
+
+---
 
 ## 4. Roles Scrum
 
-| Rol | Responsable |
-|-----|-------------|
-| Product Owner | `[RELLENAR]` |
-| Scrum Master | `[RELLENAR]` |
-| Development Team | `[RELLENAR]` |
+| Rol | Responsable | Ejemplo |
+|-----|-------------|---------|
+| Product Owner | `[RELLENAR]` | *Define prioridad: Auth → Catálogo → Yape → Alquiler* |
+| Scrum Master | `[RELLENAR]` | *Cuida Trello, daily, impedimentos* |
+| Development Team | `[RELLENAR]` | *API Java, iOS Swift, docs, pruebas* |
 
-## 5. Trello
+*Si eres solo: pon tu nombre en los 3.*
+
+---
+
+## 5. Trello — EJEMPLO DE COLUMNAS
 
 | Campo | Valor |
 |-------|--------|
-| URL | `[RELLENAR]` |
-| Columnas | Backlog \| Sprint actual \| En progreso \| En prueba \| Hecho |
+| URL | `[RELLENAR]` *https://trello.com/b/xxxx/libreriarent* |
+| Columnas | **Backlog** \| **Sprint actual** \| **En progreso** \| **En prueba** \| **Hecho** |
+| Etiquetas | `iOS` `API` `Docs` `Watson` `Pruebas` `Bloqueado` |
 
-## 6. Alcance MVP (marcar)
+---
 
-**Incluye:** `[RELLENAR]`  
-**No incluye:** `[RELLENAR]`
+## 6. Alcance MVP — EJEMPLO COMPLETO
 
-## 7. Stack
+### Incluye
+- Títulos + ejemplares con **UID** y estados (available / reserved / onLoan / retired)
+- Login **email/contraseña** + **Facebook**
+- Pago **Yape**: celular + código de verificación; total = alquiler + garantía (`garantía >= valor libro`)
+- Recojo y devolución **solo en biblioteca**
+- El **plazo del alquiler corre desde el pago** (aunque aún no recoja)
+- **REST** (Spring Boot) + **Core Data** + **Firebase**
+- **Watson** Assistant (FAQ: precios, recojo, Yape)
+- Roles **admin** y **usuario**
+
+### No incluye
+- Delivery a domicilio
+- Venta definitiva de libros
+- Multas automáticas
+- Varias sucursales
+- Integración bancaria real de Yape (MVP: flujo + validación; API real después)
+
+---
+
+## 7. Stack — EJEMPLO COMPLETO
 
 | Capa | Tecnología |
 |------|------------|
-| App | `[RELLENAR]` *iOS UIKit Storyboard* |
-| API | `[RELLENAR]` *Spring Boot* |
-| Local | `[RELLENAR]` *Core Data* |
-| Nube/Auth | `[RELLENAR]` *Firebase + Facebook* |
-| IA | `[RELLENAR]` *Watson* |
+| App móvil | iOS, UIKit, Storyboard, MVC modular + Coordinators |
+| Persistencia local | Core Data (cache) |
+| Backend | Java Spring Boot (REST) + BD |
+| Nube / auth | Firebase + Facebook Login |
+| Gestión | Scrum + Trello |
+| IA | IBM Watson Assistant |
+| Pruebas | JUnit, Rest Assured, Cucumber; Appium opcional |
 
-## 8. Próximos hitos
+---
 
-| Hito | Fecha |
-|------|-------|
-| AT01 | `[RELLENAR]` |
-| AT02 | `[RELLENAR]` |
-| Sprint 1 | `[RELLENAR]` |
+## 8. Próximos hitos — EJEMPLO
 
-## 9. DoD básica
+| Hito | Entregable | Fecha |
+|------|------------|-------|
+| AT01 | Problemática → Product Backlog | `[RELLENAR]` *ej. semana 5* |
+| AT02 | Release Plan, pruebas, CI | `[RELLENAR]` *ej. semana 9* |
+| Sprint 1–2 | API + Auth + Catálogo iOS | `[RELLENAR]` |
+| EF | Sistema + manuales + sustentación | `[RELLENAR]` *sesión 13* |
 
-`[RELLENAR]` *Ej: código + aceptación + prueba + card en Hecho*
+---
 
-## 10. Acuerdos
+## 9. Definition of Done — EJEMPLO
 
-- `[RELLENAR]`
-- `[RELLENAR]`
+Una historia está **Hecho** cuando:
+1. Código en GitHub / build OK  
+2. Cumple criterios de aceptación  
+3. Probada (manual o automatizada)  
+4. Card en **Hecho** en Trello  
+5. Documentado lo mínimo si aplica  
+
+---
+
+## 10. Acuerdos — EJEMPLOS (cámbialos)
+
+- `[RELLENAR]` *Daily asíncrono por WhatsApp a las 9:00*  
+- `[RELLENAR]` *Nadie marca Hecho sin actualizar Trello*  
+- `[RELLENAR]` *Cambios de alcance se anotan en AT01 / este Kickoff*  

@@ -24,4 +24,7 @@ Los datos reales van en [`../trabajo/`](../trabajo/).
 | 16 | [16-MANUAL-USUARIO.md](16-MANUAL-USUARIO.md) | Cierre |
 | 17 | [17-MANUAL-INSTALACION.md](17-MANUAL-INSTALACION.md) | Cierre |
 
-**Uso:** copia el archivo a `docs/trabajo/` (ya hay copias) y reemplaza `[RELLENAR]`.
+**Uso:**  
+1. `plantillas/` = molde con **ejemplos completos** del negocio LibreriaRent.  
+2. Copia ya está en `../trabajo/` — ahí reemplaza solo `[RELLENAR]` (nombres, fechas, links, fuentes).  
+3. No borres los ejemplos hasta que tu texto real los sustituya.

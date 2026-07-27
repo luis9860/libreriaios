@@ -1,44 +1,50 @@
-# 16 — Manual de usuario (plantilla)
+# 16 — Manual de usuario (plantilla completa con ejemplos)
 
-## 1. Introducción
+> Las capturas se agregan cuando exista la app (`[RELLENAR]` imagen).
 
-Para quién es este manual: `[RELLENAR]`
+---
 
-## 2. Requisitos del dispositivo
+## 1. Introducción — EJEMPLO
+
+Manual para usuarios de **LibreriaRent**: lectores que alquilan libros físicos y administradores del local.
+
+## 2. Requisitos
 
 - iPhone con iOS `[RELLENAR]`+  
 - Internet  
+- Cuenta email o Facebook  
 
-## 3. Primeros pasos
+## 3. Primeros pasos — EJEMPLO
 
-### 3.1 Registro / login email
+### Login email
+1. Abrir app → Iniciar sesión  
+2. Ingresar email y contraseña  
+3. Entrar al home (catálogo)  
 
-1. `[RELLENAR]`  
-2. `[RELLENAR]`  
+### Login Facebook
+1. Botón “Continuar con Facebook”  
+2. Autorizar  
+3. Entrar como usuario member  
 
-### 3.2 Login Facebook
+## 4. Alquilar un libro — EJEMPLO
 
-1. `[RELLENAR]`  
+1. En **Catálogo**, elige un título con ejemplares disponibles  
+2. Revisa **alquiler**, **garantía** y **total**  
+3. Continuar a **Pagar con Yape**  
+4. Ingresa **número de celular** y **código de verificación**  
+5. Confirmar pago  
+6. Verás el alquiler en estado **Reservado** (el plazo ya corre)  
+7. Ve a la biblioteca y **recoge** el ejemplar (UID)  
+8. Al terminar, **devuelve** en el mismo local para gestionar la garantía  
 
-## 4. Alquilar un libro
+## 5. Watson — EJEMPLO
 
-1. Ver catálogo  
-2. Elegir título / ejemplar  
-3. Ver alquiler + garantía  
-4. Pagar con Yape (teléfono + código de verificación)  
-5. Recoger en biblioteca  
-6. Devolver en biblioteca  
+Menú Ayuda / Watson → preguntas como “¿cuánto es la garantía?” o “¿dónde recojo?”.
 
-Detalle de pantallas: `[RELLENAR]` *(capturas)*
+## 6. Admin — EJEMPLO
 
-## 5. Preguntas frecuentes / Watson
-
-`[RELLENAR]`
-
-## 6. Roles admin (si aplica)
-
-`[RELLENAR]`
+Con cuenta admin: Alta de títulos (valor, alquiler, garantía) y ejemplares UID; confirmar recojos/devoluciones.
 
 ## 7. Soporte
 
-Contacto: `[RELLENAR]`
+`[RELLENAR]` email/WhatsApp del equipo.

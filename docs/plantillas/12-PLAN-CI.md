@@ -1,51 +1,55 @@
-# 12 — Plan de integración continua (plantilla)
+# 12 — Plan de CI (plantilla completa con ejemplos)
 
-## 1. Objetivo
+---
 
-`[RELLENAR]`
+## 1. Objetivo — EJEMPLO
 
-*Ej: Cada push valida build y pruebas básicas de API/app.*
+Cada push/PR a la API ejecuta build + tests unitarios automáticamente (GitHub Actions). La app iOS se valida al menos con build manual en Xcode cada sprint (CI macOS opcional).
 
-## 2. Repositorios
+## 2. Repos — EJEMPLO
 
-| Repo | Tecnología | CI |
-|------|------------|-----|
-| API | Spring Boot | `[RELLENAR]` *GitHub Actions* |
-| iOS | Xcode | `[RELLENAR]` *manual / Actions macOS si aplica* |
-| Docs | Markdown | — |
+| Repo | CI propuesto |
+|------|----------------|
+| `libreriaios` (docs + luego monorepo o subcarpeta api/) | Actions para API |
+| App iOS | Build local Xcode; Actions si hay runner macOS |
 
-## 3. Pipeline propuesto (API)
+## 3. Pipeline API — EJEMPLO
 
-1. Checkout  
-2. Build (`./mvnw package` o Gradle)  
-3. Unit tests  
-4. (Opcional) Rest Assured smoke  
-5. Publicar artefacto / imagen  
+```yaml
+# Idea (no es el archivo final todavía)
+# on: [push, pull_request]
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps: checkout → setup-java → mvn test → mvn package
+```
 
-## 4. Triggers
+Pasos: Checkout → JDK 17 → `mvn test` → artefacto jar.
+
+## 4. Triggers — EJEMPLO
 
 | Evento | Acción |
 |--------|--------|
-| Push a `main` | `[RELLENAR]` |
-| Pull Request | `[RELLENAR]` |
+| Push `main` | Build + test |
+| Pull Request | Build + test (bloquear merge si falla) |
 
-## 5. Quality gates
+## 5. Quality gates — EJEMPLO
 
-- `[RELLENAR]` *Build OK*
-- `[RELLENAR]` *Tests verdes*
-- `[RELLENAR]`
+- [ ] Compila  
+- [ ] Unit tests OK  
+- [ ] (Luego) smoke Rest Assured  
 
 ## 6. Responsables
 
 | Actividad | Quién |
 |-----------|-------|
-| Mantener CI | `[RELLENAR]` |
-| Revisar fallos | `[RELLENAR]` |
+| Mantener workflow | `[RELLENAR]` |
+| Revisar fallos CI | Development Team |
 
 ## 7. Estado actual
 
-- [ ] CI configurado  
+- [ ] Carpeta API creada  
+- [ ] Workflow añadido  
 - [ ] Badge en README  
-- [ ] Documentado en este plan  
 
-Notas: `[RELLENAR]`
+Notas: `[RELLENAR]` *CI se implementa cuando exista el código Spring Boot (Sprint 1).*

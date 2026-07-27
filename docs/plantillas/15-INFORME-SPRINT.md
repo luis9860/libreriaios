@@ -1,45 +1,50 @@
-# 15 — Informe de Sprint (plantilla)
+# 15 — Informe de Sprint (plantilla completa con ejemplos)
 
-## Encabezado
+> Copia por sprint: `15-INFORME-SPRINT-01.md`
+
+---
+
+## Encabezado — EJEMPLO
 
 | Campo | Valor |
 |-------|--------|
-| Sprint # | `[RELLENAR]` |
+| Sprint # | 1 |
 | Fechas | `[RELLENAR]` |
 | Equipo | `[RELLENAR]` |
 
-## 1. Sprint Goal
+## 1. Sprint Goal — EJEMPLO
 
-`[RELLENAR]`
+API Spring Boot levantada con login email y listado/creación de libros.
 
-## 2. Planificado vs entregado
+## 2. Planificado vs entregado — EJEMPLO
 
-| Historia | Planificada | Entregada | Comentario |
-|----------|-------------|-----------|------------|
-| US__ | Sí | Sí/No | `[RELLENAR]` |
+| Historia | Plan | Hecho | Comentario |
+|----------|------|-------|------------|
+| US01 Login email | Sí | `[RELLENAR]` | |
+| US09 Alta título API | Sí | `[RELLENAR]` | |
+| Setup CI | Sí | `[RELLENAR]` | Puede quedar parcial |
 
-## 3. Incremento demo
+## 3. Incremento demo — EJEMPLO
 
-Qué se puede mostrar:  
-`[RELLENAR]`
+Postman: `POST /api/auth/login`, `GET /api/books`. Seed de 3 libros.
 
-## 4. Métricas (si aplica)
+## 4. Métricas — EJEMPLO
 
 | Métrica | Valor |
 |---------|--------|
-| Puntos comprometidos | `[RELLENAR]` |
+| Puntos comprometidos | 8 |
 | Puntos terminados | `[RELLENAR]` |
 
-## 5. Impedimentos
+## 5. Impedimentos — EJEMPLO
 
-`[RELLENAR]`
+*Ej: puerto 8080 ocupado; se cambió a 8081.*
 
-## 6. Retrospectiva (Keep / Drop / Try)
+## 6. Retro — EJEMPLO
 
 | Keep | Drop | Try |
 |------|------|-----|
-| `[RELLENAR]` | `[RELLENAR]` | `[RELLENAR]` |
+| Contratos API escritos antes de iOS | Scope creep WhatsApp | Daily 10 min fijos |
 
-## 7. Próximo sprint (preview)
+## 7. Próximo sprint — EJEMPLO
 
-`[RELLENAR]`
+Catálogo iOS + Core Data (US03, US04).
